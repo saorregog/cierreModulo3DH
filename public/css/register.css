@@ -34,94 +34,72 @@ a {
 main {
     background-color: #ebebeb;
     margin: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
-h2 {
-    color: rgb(54, 54, 54);
-    font-size: 24px;
-    margin: 0px;
-    padding: 40px 0px 40px 15px;
-}
-
-article {
-    background-color: white;
-    border: solid 1px #ebebeb;
-    border-radius: 10px;
-    margin: 0px 15px 10px 15px;
-    padding: 15px;
-    position: relative;
-    transition: all 200ms;
-}
-
-article:hover {
-    box-shadow: 0px 0px 20px black;
-}
-
-img.banner , img.producto {
-    width: 100%;
-}
-
-.carrito_compra {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.circulo {
-    color: #39b54a;
-    font-size: 50px;
-    position: relative;
-    left: 38px;
-}
-
-.carrito {
-    color: #39b54a;
-    font-size: 25px;
-    z-index: 1;
-    transition: all 200ms;
-}
-
-.carrito:hover {
-    transform: rotate(-90deg);
-}
-
-.precio_descuento {
-    display: flex;
-    align-items: center;
-    padding-bottom: 30px;
-}
-
-.precio {
-    font-size: 20px;
+.etiquetas {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
     text-align: left;
-    width: 40%;
+    padding: 20px 0px 15px 30px;
 }
 
-.descuento {
+.formulario {
+    height: 25px;
+    width: 70%;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.formulario_box {
+    height: 25px;
+    width: 70%;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: solid 1px black;
+    border-radius: 15px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.boton_enviar {
     font-size: 18px;
-    color: #39b54a;
-    text-align: left;
-    width: 60%;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    background-color: #1259c3;
+    transition: all 200ms;
 }
 
-h4 {
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: ;
-    width: 100%;
-    height: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    font-size: 1px;
-    transition: all 200ms
+.boton_enviar:hover {
+    background-color: #0022aa;
+}
+
+.boton_borrar {
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border: solid 1px black;
+    border-radius: 8px;
+    color: black;
+    background-color: white;
+    transition: all 200ms;
+}
+
+.boton_borrar:hover {
+    background-color: rgb(172, 172, 172);
 }
 
 footer {
@@ -169,7 +147,7 @@ div.footer {
     header {
         position: fixed;
         top: 0px;
-        z-index: 10;
+        z-index: 1;
     }
 
     .encabezado {
@@ -206,12 +184,7 @@ div.footer {
     }
 
     main {
-        margin-top: 145px;
-    }
-
-    h4:hover {
-        opacity: 1;
-        font-size: 20px;
+        margin-top: 155px;
     }
 
 }
@@ -275,34 +248,32 @@ div.footer {
         display: none;
     }
 
-    .articulos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .etiquetas {
+        font-size: 5vw;
+    }
+    
+    .formulario {
+        height: 7vw;
+        font-size: 4vw;
     }
 
-    article {
-        width: 41%;
+    .formulario_box {
+        height: 7vw;
+        font-size: 4vw;
     }
 
-    .precio_descuento {
-        justify-content: space-between;
-        padding-bottom: 6vw;
+    .rbutton {;
+        width: 3.2vw;
+        height: 3.2vw;
     }
 
-    .precio {
-        font-size: 3.9vw;
-        width: auto;
+    .cbox {
+        width: 3.2vw;
+        height: 3.2vw;
     }
 
-    .descuento {
-        font-size: 3vw;
-        width: auto;
-    }
-
-    h4:hover {
-        opacity: 1;
-        font-size: 3.2vw;
+    .boton_enviar , .boton_borrar {
+        font-size: 6vw;
     }
 
     .iconos_footer {
@@ -385,33 +356,34 @@ div.footer {
         display: none;
     }
 
-    .articulos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .etiquetas {
+        font-size: 18px;
     }
-
-    article {
-        width: 21%;
-    }
-
-    .precio_descuento {
-        justify-content: space-between;
-    }
-
-    .precio {
+    
+    .formulario {
+        height: 30px;
         font-size: 16px;
-        width: auto;
     }
 
-    .descuento {
-        font-size: 14px;
-        width: auto;
+    .formulario_box {
+        width: 500px;
+        height: 30px;
+        font-size: 16px;
+        padding-left: 20px
     }
 
-    h4:hover {
-        opacity: 1;
-        font-size: 1.7vw;
+    .rbutton {;
+        width: 15px;
+        height: 15px;
+    }
+
+    .cbox {
+        width: 15px;
+        height: 15px;
+    }
+
+    .boton_enviar , .boton_borrar {
+        font-size: 20px;
     }
 
     .foot {
