@@ -1,8 +1,8 @@
 const EXPRESS = require('express');
 const APP = EXPRESS();
 
-APP.listen(process.env.PORT || 3030, function () {
-    console.log('Servidor ejecutándose en el puerto 3030');
+APP.listen(process.env.PORT || 3000, function () {
+    console.log('Servidor ejecutándose en el puerto 3000');
 });
 
 APP.use(EXPRESS.static(__dirname + '/public'));
