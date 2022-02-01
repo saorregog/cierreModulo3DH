@@ -1,7 +1,7 @@
 const EXPRESS = require('express');
 const APP = EXPRESS();
 
-APP.listen(3030, function () {
+APP.listen(process.env.PORT || 3030, function () {
     console.log('Servidor ejecutándose en el puerto 3030');
 });
 
